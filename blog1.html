@@ -1,0 +1,347 @@
+<html>
+<head>
+	<title>My Blog</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<style>
+	body
+	{
+		background: #FFFFFF;
+	}
+	.ula
+	{
+		background:#96b2bc;
+	}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default navbar-fixed-top">
+		<!-- Navbar content -->
+		<div class="col-lg-1"></div>
+		<a class="navbar-brand" href="blog-front.html">Navbar</a>
+		<div class="collapse navbar-collapse" id="navbarNavDropdown">
+			<ul class="navbar-nav nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="blog-front.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blogs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id ="signed-name"></a>
+				</li>
+
+				
+			</ul>
+			<div class="col-lg-8"></div>
+			
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#myModal" id="breg">Register</button>
+
+			<div id="myModal" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Login</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							
+						</div>
+						<div class="modal-body">
+							<form id ="f1" class="form-inline" onsubmit="return reg()">
+								<div class="form-group" style="margin:2px">
+									<label for="staticEmail2" class="sr-only">Name</label>
+									<input type="text" class="form-control" id="naam" placeholder="Name">
+								</div><br>
+								<div class="form-group" style="margin:2px">
+									<label for="staticEmail2" class="sr-only">E-mail</label>
+									<input type="text" class="form-control" id="name" placeholder="Email">
+								</div><br>
+								<div class="form-group mx-lg-8" style="margin:2px">
+									<label for="inputPassword2" class="sr-only">Password</label>
+									<input type="password" class="form-control" id="pass" placeholder="Password">
+								</div><br>
+								<button type="submit" style="margin:2px" class="btn btn-primary">Confirm identity</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target="#myModal1" id ="blogin">Login</button>
+
+			<div id="myModal1" class="modal fade" role="dialog">
+				<div class="modal-dialog modal-lg">
+
+					<!-- Modal content-->
+					<div class="modal-content">
+						<div class="modal-header">
+							<h4 class="modal-title">Login</h4>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							
+						</div>
+						<div class="modal-body">
+							<form id="f2" class="form-inline" onsubmit="return login()">
+								<div class="form-group" style="margin:2px">
+									<label for="staticEmail2" class="sr-only">Email</label>
+									<input type="text" class="form-control" id="name1" placeholder="Email">
+								</div>
+								<div class="form-group mx-lg-8" style="margin:2px">
+									<label for="inputPassword2" class="sr-only">Password</label>
+									<input type="password" class="form-control" id="pass1" placeholder="Password">
+								</div>
+								<button type="submit" style="margin:2px" class="btn btn-primary">Confirm identity</button>
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<button class="btn btn-outline-success my-2 my-sm-0" type="button" onclick="return logout()" id= "blogout">Logout</button>
+		</div>
+	</nav>
+
+	<center>
+		<img src="images/1.jpg" id="im" class="img-fluid" style="width:100%;height:40%;">
+	</center>
+	<br>	
+
+	<div class="row">
+		<div class="col-lg-1">
+		</div>
+		<div class="col-lg-10">
+			<div class="card" style="background:white;">
+				<div class="card-header">
+					<div class="jumbotron text-center">
+						<h1 id="h">My Blog 1</h1>
+					</div>
+				</div>
+				<div class="card-body" id="b">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae vehicula urna, molestie imperdiet elit. Integer vehicula id augue sed suscipit. Nullam vitae magna imperdiet, tincidunt metus eget, porta enim. Phasellus euismod nulla suscipit nisi suscipit, vel finibus nibh ullamcorper. Mauris commodo nec purus non tempor. Quisque luctus aliquet hendrerit. In vitae dui sit amet lacus auctor imperdiet. Donec mollis lectus vel dui molestie, et sollicitudin purus aliquam. Aenean lobortis erat massa, vel porta velit sagittis at. Vestibulum massa est, pellentesque nec bibendum ut, sodales sit amet erat. Nullam at mattis justo. Nullam ullamcorper eros tellus, eu iaculis justo pellentesque ac. Donec dignissim tempor nulla, ut pulvinar nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+					</p>
+
+					<p>
+						Sed quis ligula erat. Maecenas egestas eu odio euismod varius. Sed neque odio, bibendum rutrum urna vel, tristique ultrices eros. Vestibulum sed molestie felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut dapibus nulla et leo mollis, a malesuada quam hendrerit. Donec aliquam nisi diam, non pulvinar ante rhoncus et. Integer purus odio, consectetur pellentesque bibendum feugiat, tempus ac neque. Vivamus id dictum felis. Vestibulum dolor ligula, cursus non lacus id, elementum sodales est.
+					</p>
+					<p>
+						In tempor turpis sapien, a finibus metus elementum nec. Duis et dui ligula. Aliquam in nibh lobortis, suscipit dolor non, consequat urna. In risus ante, pellentesque eu eleifend sit amet, semper sit amet leo. Ut a pellentesque turpis. Vivamus condimentum turpis sed ex condimentum porta. Proin in leo elit. Maecenas congue in velit eu ullamcorper.
+					</p>
+					<p>
+						Vivamus non suscipit dolor. Fusce tincidunt, lectus quis blandit condimentum, neque risus commodo ante, nec lobortis neque ligula ac risus. Phasellus egestas nisl non ipsum suscipit, quis luctus lorem aliquam. Maecenas ac tempor orci, in lobortis mi. Integer interdum viverra nunc at iaculis. Maecenas ultricies eleifend enim convallis condimentum. Integer massa felis, luctus eu quam quis, congue suscipit diam. Donec nec lacinia nunc, eget dapibus metus.
+					</p>
+					<p>
+						Phasellus sollicitudin lectus eget mauris vehicula interdum. Ut iaculis, lorem eget congue consectetur, libero nulla cursus felis, ornare congue magna lorem et sapien. Phasellus et tincidunt ipsum. Cras viverra pellentesque erat, vitae varius dolor porttitor in. Donec nisl nibh, laoreet vel ipsum sed, condimentum aliquam turpis. Morbi ultricies lorem ligula, sed tincidunt tellus faucibus vel. Nam a ex suscipit, vulputate urna tincidunt, sagittis mauris. Proin accumsan, lorem id auctor lobortis, quam arcu ultrices diam, quis cursus ex eros dignissim est. Nam vitae nibh fringilla, volutpat dui sed, pretium velit. Aliquam aliquet id enim a molestie. Mauris semper diam dolor, a luctus augue dapibus nec.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+
+
+	<div class="row">
+		<div class="col-lg-1"></div>
+		<div class="col-lg-9">
+
+
+			<textarea class="form-control" placeholder="Enter your comments here:" rows="5" id="comment"></textarea>
+
+		</div>
+		<button class="btn btn-success ">Post</button>
+		<br>
+		<br>
+
+	</div>
+</div>
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-6"><h3 style = "display:inline">Recent Comments: </h3><span class="badge">4</span><br><br><br></div>
+</div>
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+		<div class="card" style="border:none;">
+
+			<div class="card-body">
+				<div class="row">
+					<div class="col-lg-2">Name: </div>
+					<div class="col-lg-6">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra vulputate egestas. Pellentesque a ligula erat. Fusce faucibus auctor metus, sed hendrerit velit volutpat et. Nam accumsan ornare elit. </p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+
+
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+		<div class="card" style="border:none;">
+
+			<div class="card-body">
+				<div class="row">
+					<div class="col-lg-2">Name: </div>
+					<div class="col-lg-6">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra vulputate egestas. Pellentesque a ligula erat. Fusce faucibus auctor metus, sed hendrerit velit volutpat et. Nam accumsan ornare elit. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+
+
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+		<div class="card" style="border:none;">
+
+			<div class="card-body">
+				<div class="row">
+					<div class="col-lg-2">Name: </div>
+					<div class="col-lg-6">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra vulputate egestas. Pellentesque a ligula erat. Fusce faucibus auctor metus, sed hendrerit velit volutpat et. Nam accumsan ornare elit. </p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<br>
+
+
+<div class="row">
+	<div class="col-lg-1"></div>
+	<div class="col-lg-10">
+		<div class="card" style="border:none;">
+
+			<div class="card-body">
+				<div class="row">
+					<div class="col-lg-2">Name: </div>
+					<div class="col-lg-6">
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra vulputate egestas. Pellentesque a ligula erat. Fusce faucibus auctor metus, sed hendrerit velit volutpat et. Nam accumsan ornare elit. </p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<br>
+<br>
+
+<hr>
+
+
+<script>
+	var x = localStorage.getItem("id");
+	var formdata= {"blog-id": x}; 
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function(){
+		if(this.readyState == 4 && this.status==200) {
+			console.log(JSON.parse(this.responseText));
+			var a=JSON.parse(this.responseText);
+			document.getElementById("b").innerHTML=a.body;
+			document.getElementById("h").innerHTML=a.title; 
+			document.getElementById("im").src=a.imageUrl;
+		}
+	};
+	
+	xhttp.open("POST", "http://koushikmln.com:7500/blogs/getBlog" , true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send("blogId="+x);
+</script>
+<script>
+	
+	document.getElementById("blogin").style="visibility:visible";
+		document.getElementById("breg").style="visibility:visible";
+		document.getElementById("blogout").style="visibility:hidden";
+	if(localStorage.getItem("signed-in")){
+		//alert("Signed in");
+		document.getElementById("signed-name").innerHTML=localStorage.getItem("signed-in");
+		document.getElementById("blogin").style="visibility:hidden";
+		document.getElementById("breg").style="visibility:hidden";
+		document.getElementById("blogout").style="visibility:visible";
+	}
+
+		
+	
+	var reg=function(){
+		var form= document.getElementById("f1");
+		var user= {"n":form.naam.value , "u": form.name.value , "p": form.pass.value};
+			//alert(JSON.stringify(user));
+			//alert(localStorage.getItem("usersj"));
+
+			var a = JSON.parse(localStorage.getItem("usersb"));
+			//alert(localStorage.getItem("usersj"));
+			if(a!=null){
+				;
+			}
+			else
+				a=[];
+			a.push(user)
+			//alert(JSON.stringify(a));
+			localStorage.setItem("usersb",JSON.stringify(a));
+			alert("Registration Succesfull! Login to Continue");
+
+
+
+		}
+
+
+		var login=function()
+		{
+			
+				var form= document.getElementById("f2");
+				var a = JSON.parse(localStorage.getItem("usersb"));
+			//alert(a[3].p);
+			for(var i=0;i<a.length;i++)
+			{
+				//alert(a[i].u,a[i].p);
+				if(form.name1.value==a[i].u && form.pass1.value==a[i].p){
+				//	alert(a[i].u,a[i].p);
+				//alert("Login Succesfull!");
+				localStorage.setItem("signed-in", a[i].n);
+				return true
+			}
+
+		}
+		alert("Wrong credentials");
+		return false;
+
+}
+
+var logout=function()
+{	document.getElementById("signed-name").innerHTML="";
+	localStorage.removeItem("signed-in");
+	document.getElementById("blogin").style="visibility:visible";
+		document.getElementById("breg").style="visibility:visible";
+		document.getElementById("blogout").style="visibility:hidden";
+}
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body> 
+</html>
